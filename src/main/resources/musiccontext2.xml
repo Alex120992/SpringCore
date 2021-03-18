@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
     <!-- Задаем значения через properties-->
-    <context:property-placeholder location="classpath:musicPlayer.properties"/>
+    <context:property-placeholder location="classpath:musicPlayerspringcore2.properties"/>
     <!--Здесь мы можем менять классы, не меняя его в самом коде-->
     <bean id="musicBean"
           class="ru.zateev.springcore3.ClassicakMusic">
