@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--Здесь мы можем менять классы, не меняя его в самом коде-->
+    <bean id="musicBean"
+          class="ru.zateev.springcore2.ClassicakMusic">
+    </bean>
+<!--    Внедрение зависимости musicbean через ссылку конструктора ref-->
+    <bean id="musicPlayer"
+          class="ru.zateev.springcore2.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
+    </bean>
+</beans>
