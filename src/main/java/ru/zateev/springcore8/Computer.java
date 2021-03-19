@@ -1,4 +1,4 @@
-package ru.zateev.springcore7;
+package ru.zateev.springcore8;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -15,9 +15,5 @@ public class Computer {
 //        this.musicPlayer = musicPlayer;
 //    }
 
-    @Override
-    public String toString() {
-        musicPlayer.playMusic();
-        return "Computer " + id;
-    }
+
 }
